@@ -1,3 +1,4 @@
+//Script para cambiar de color la pagina. 
 let colorIcons = document.querySelector(".color-icon"),
 icons = document.querySelector(".color-icon .icons");
 
