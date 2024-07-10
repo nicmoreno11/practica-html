@@ -1,0 +1,251 @@
+/* UN SOLO ARCHIVO CSS PARA TODOS LOS HTML */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV - MENU */
+.header{
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+nav{
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    font-size: 20px;
+}
+nav ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #000;
+}
+/* SUBMENU */
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dropdown:hover .submenu{
+    display: block;
+}
+/* CONTENIDO  */
+.contenido{
+    width: 100%;
+    padding: 160px;
+    text-align: center;
+}
+.contenido a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.contenido a:hover{
+    color: #333;
+}
+.contenido_2{
+    margin-top: 50px;
+    background-color: #000;
+    padding: 100px;
+}
+.bandas {
+    width: 100%;
+    margin-top: 20px;
+}   
+.bandas h2 {
+    padding: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.band-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.band-info img  {
+    width: 45%;
+    height: 45%;
+    margin-right: 20px;
+}
+
+.band-info p {
+    padding: 35px;
+    color: #333;
+    margin: 0;
+}
+.band-info p::selection{
+    background: #333;
+}
+.band-info a{
+    text-decoration: none;
+    color: #000;
+}
+.band-info a:hover{
+    color: #333;
+}
+.band-info span{
+    font-weight: bold;
+}
+/* CONFIGURACION DE LOS FRAMES */
+.frame{
+    padding: 25px;
+    margin-right: 1300px;
+}
+.frame-album{
+    padding: 25px;
+    margin-right: 1500px;
+}
+/* DIVISION DE CONTENIDO */
+.division{
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    padding: 0px 25px;
+    margin: 0;
+}
+.division h1{
+    opacity: 0;
+}
+.division-r{
+    height: 30px;
+    width: 100%;
+    background-color: #333;
+    padding: 0px 25px;
+    margin: 0;
+    
+}
+.division-r h1{
+    opacity: 0;
+}
+
+.albumes h2{ 
+    padding: 15px;
+    color: #333;
+    text-align: left;
+}
+
+/* Formulario */
+.signupFrm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+.form a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+.form a:hover{
+    color: #333;
+}
+.title{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.inputContainer{
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+.input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    z-index: 1;
+}
+
+.label{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5;
+    z-index: 0;
+}
+.submitBtn{
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.submitBtn:hover{
+    background-color: #333;
+    transform: translateY(-2px);
+}
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+  }
+.input:focus {
+    border: 2px solid #333;
+}
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px){
+    .contenido{
+        width: 100%;
+    }
+    .bandas{
+        width: 100%;
+        padding: 25px;
+    }
+    .band-info{
+        width: 100%;
+    }
+}
