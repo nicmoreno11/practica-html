@@ -31,15 +31,16 @@ nav ul li a{
     padding: 20px;
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 nav ul li a:hover{
-    color: #000;
+    color: rgba(0, 0, 0, 0.5);
 }
 /* SUBMENU */
 .submenu{
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: #333;
     color: #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -69,7 +70,8 @@ nav ul li a:hover{
 .bandas {
     width: 100%;
     margin-top: 20px;
-}   
+} 
+  
 .bandas h2 {
     padding: 15px;
     color: #333;
@@ -94,6 +96,7 @@ nav ul li a:hover{
     color: #333;
     margin: 0;
 }
+
 .band-info p::selection{
     background: #333;
 }
@@ -235,7 +238,6 @@ nav ul li a:hover{
     font-size: 14px;
     font-weight: 600;
 }
-
 /* RESPONSIVE */
 @media (min-width: 600px){
     .contenido{
